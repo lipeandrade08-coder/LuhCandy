@@ -10,6 +10,9 @@
     <!-- Open Sans for standard text, Playfair Display for the luxurious logo/headings feel -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/06_Selo_Circular_Rosa_Transparente.png">
 </head>
 <body>
     <!-- Navbar -->
@@ -46,19 +49,31 @@
     <section class="details">
         <div class="container details-grid">
             <div class="detail-item fade-in-up" style="animation-delay: 0.1s;">
-                <div class="detail-icon">✧</div>
+                <div class="detail-icon-wrapper">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 4C20 4 16 16 16 24c0 8 4 14 10 17v3h12v-3c6-3 10-9 10-17C48 16 44 4 32 4z" fill="currentColor" opacity="0.15"/><path d="M32 8c-10 0-13 10-13 16 0 7 3 12 8 15v2h10v-2c5-3 8-8 8-15C45 18 42 8 32 8z" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="26" y="42" width="12" height="2" rx="1" fill="currentColor"/><rect x="28" y="46" width="8" height="2" rx="1" fill="currentColor"/></svg>
+                </div>
+                <div class="detail-number">01</div>
                 <h3>Sabor & Requinte</h3>
                 <p>Cardápios elaborados com ingredientes premium, trazendo a verdadeira essência da confeitaria e padaria fina para a sua mesa.</p>
+                <div class="detail-line"></div>
             </div>
             <div class="detail-item fade-in-up" style="animation-delay: 0.2s;">
-                <div class="detail-icon">✧</div>
+                <div class="detail-icon-wrapper">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="26" r="14" fill="currentColor" opacity="0.15"/><circle cx="32" cy="26" r="11" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M28 26l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M20 44c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+                </div>
+                <div class="detail-number">02</div>
                 <h3>Design Elegante</h3>
                 <p>Apresentação impecável que encanta aos olhos antes mesmo do primeiro pedaço. O visual perfeito para suas fotos.</p>
+                <div class="detail-line"></div>
             </div>
             <div class="detail-item fade-in-up" style="animation-delay: 0.3s;">
-                <div class="detail-icon">✧</div>
+                <div class="detail-icon-wrapper">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 12l4 8 9 1-6.5 6.5 1.5 9L32 32l-8 4.5 1.5-9L19 21l9-1 4-8z" fill="currentColor" opacity="0.15"/><path d="M32 14l3.5 7 7.5.8-5.5 5.5 1.3 7.7L32 31l-6.8 4 1.3-7.7L21 21.8l7.5-.8 3.5-7z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+                </div>
+                <div class="detail-number">03</div>
                 <h3>Eventos Únicos</h3>
                 <p>Atendimento personalizado para casamentos, aniversários e encontros corporativos que exigem um toque especial.</p>
+                <div class="detail-line"></div>
             </div>
         </div>
     </section>
@@ -67,40 +82,57 @@
     <section class="sweets-showcase">
         <div class="container">
             <div class="section-header fade-in-up">
+                <p class="section-eyebrow">Confeitaria Artesanal</p>
                 <h2>Nossas Delícias</h2>
-                <p>Feitos com amor e os melhores ingredientes, para adoçar o seu dia!</p>
+                <p>Cada peça é criada com dedicação, técnica e os melhores ingredientes.</p>
                 <div class="divider">
                     <img src="images/09_Ornamento_Inferior_Transparente.png" alt="Ornamento" class="ornament-icon">
                 </div>
             </div>
             
             <div class="sweets-grid">
-                <div class="sweet-card fade-in-up floating" style="animation-delay: 0.1s;">
+                <div class="sweet-card fade-in-up floating-1" style="animation-delay: 0.1s;">
+                    <div class="sweet-tag">Signature</div>
                     <div class="sweet-img-wrapper">
                         <img src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&q=80&w=800" alt="Macarons">
+                        <div class="sweet-img-shine"></div>
                     </div>
-                    <h3>Macarons Franceses</h3>
-                    <p>Delicados, coloridos e que derretem na boca.</p>
+                    <div class="sweet-card-body">
+                        <h3>Macarons Franceses</h3>
+                        <p>Delicados, coloridos e que derretem na boca em cada mordida.</p>
+                        <span class="sweet-detail">Técnica tradicional parisiense ♦ Recheios exclusivos</span>
+                    </div>
                 </div>
-                <div class="sweet-card fade-in-up floating" style="animation-delay: 0.3s;">
+                <div class="sweet-card sweet-card--featured fade-in-up floating-2" style="animation-delay: 0.3s;">
+                    <div class="sweet-tag sweet-tag--gold">Destaque</div>
                     <div class="sweet-img-wrapper">
                         <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&q=80&w=800" alt="Bolos Finos">
+                        <div class="sweet-img-shine"></div>
                     </div>
-                    <h3>Bolos Finos</h3>
-                    <p>O centro das atenções, com sabores inesquecíveis.</p>
+                    <div class="sweet-card-body">
+                        <h3>Bolos Finos</h3>
+                        <p>O centro das atenções, com decorações únicas e sabores que ficam na memória.</p>
+                        <span class="sweet-detail">100% artesanal ♦ Personalização total</span>
+                    </div>
                 </div>
-                <div class="sweet-card fade-in-up floating" style="animation-delay: 0.5s;">
+                <div class="sweet-card fade-in-up floating-3" style="animation-delay: 0.5s;">
+                    <div class="sweet-tag">Artesanal</div>
                     <div class="sweet-img-wrapper">
                         <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&q=80&w=800" alt="Cupcakes">
+                        <div class="sweet-img-shine"></div>
                     </div>
-                    <h3>Cupcakes Artesanais</h3>
-                    <p>Pequenas porções de felicidade em formatos divertidos.</p>
+                    <div class="sweet-card-body">
+                        <h3>Cupcakes Artesanais</h3>
+                        <p>Pequenas obras de arte, deliciosas e perfeitas para qualquer ocasião.</p>
+                        <span class="sweet-detail">Decoração temática ♦ Sabores variados</span>
+                    </div>
                 </div>
             </div>
             
-            <div class="text-center fade-in-up" style="margin-top: 50px;">
-                <a href="https://wa.me/5512992538126?text=Olá,%20quero%20conhecer%20o%20menu%20completo%20de%20doces!" class="btn btn-primary pulse-anim" target="_blank" rel="noopener noreferrer">
-                    Ver Menu Completo
+            <div class="text-center fade-in-up" style="margin-top: 60px;">
+                <a href="https://wa.me/5512992538126?text=Olá,%20quero%20conhecer%20o%20menu%20completo%20de%20doces!" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-23.2-115-65.1-157zM223.9 413.2c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 334.1l-4.4-7.1c-18.9-30.2-28.9-65.3-28.9-101.4 0-103.5 84.4-187.9 187.9-187.9 55.3 0 107.3 21.5 146.4 60.6 39.1 39.1 60.6 91.1 60.6 146.4 0 103.5-84.4 187.9-187.9 187.9zM326.8 284c-5.6-2.8-33.4-16.5-38.6-18.4-5.2-1.9-9-2.8-12.8 2.8-3.7 5.6-14.6 18.4-17.9 22.2-3.3 3.8-6.6 4.2-12.2 1.4-5.6-2.8-23.8-8.8-45.3-27.9-16.7-14.8-28-33.1-31.3-38.7-3.3-5.6-.3-8.6 2.5-11.4 2.5-2.5 5.6-6.6 8.4-9.9 2.8-3.3 3.8-5.6 5.6-9.4 1.9-3.8.9-7.1-.5-9.9-1.4-2.8-12.8-30.9-17.5-42.3-4.6-11.2-9.2-9.7-12.8-9.9-3.3-.2-7.1-.2-10.8-.2-3.8 0-9.9 1.4-15 7.1-5.2 5.6-20.2 19.8-20.2 48.2 0 28.4 20.7 55.9 23.5 59.7 2.8 3.8 40.7 62.1 98.6 87.1 13.8 6 24.6 9.6 33 12.3 13.9 4.4 26.6 3.8 36.6 2.3 11.2-1.7 33.4-13.7 38.1-26.9 4.7-13.2 4.7-24.5 3.3-26.9-1.4-2.3-5.2-3.7-10.8-6.5z"/></svg>
+                    Solicitar Menu Completo
                 </a>
             </div>
         </div>
@@ -205,8 +237,9 @@
     <section class="testimonials">
         <div class="container">
             <div class="section-header fade-in-up">
+                <p class="section-eyebrow">Histórias Reais</p>
                 <h2>O que nossos clientes dizem</h2>
-                <p>A satisfação de quem já experimentou a verdadeira arte em açúcar.</p>
+                <p>Momentos que ficaram na memória — e no coração.</p>
                 <div class="divider">
                     <img src="images/09_Ornamento_Inferior_Transparente.png" alt="Ornamento" class="ornament-icon">
                 </div>
@@ -214,22 +247,40 @@
             
             <div class="testimonials-grid">
                 <div class="testimonial-card fade-in-up" style="animation-delay: 0.1s;">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="feedback">"Os doces do meu casamento estavam impecáveis! Além de lindos, derretiam na boca. Todos os convidados elogiaram."</p>
-                    <h4 class="client-name">Amanda Silva</h4>
-                    <span class="client-event">Casamento</span>
+                    <div class="testimonial-quote-icon">❝</div>
+                    <p class="feedback">Os doces do meu casamento estavam impecáveis! Além de lindos, derretiam na boca. Todos os convidados elogiaram muito e ainda pedindo contato.</p>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-avatar">AS</div>
+                        <div>
+                            <h4 class="client-name">Amanda Silva</h4>
+                            <span class="client-event">♦ Casamento</span>
+                        </div>
+                        <div class="testimonial-stars">★★★★★</div>
+                    </div>
                 </div>
                 <div class="testimonial-card fade-in-up" style="animation-delay: 0.2s;">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="feedback">"Contratamos o brunch corporativo para o evento da nossa empresa e foi um sucesso. Apresentação super premium!"</p>
-                    <h4 class="client-name">Carlos Oliveira</h4>
-                    <span class="client-event">Evento Corporativo</span>
+                    <div class="testimonial-quote-icon">❝</div>
+                    <p class="feedback">Contratamos o brunch corporativo para o evento da nossa empresa e foi um sucesso absoluto. Apresentação super premium e sabor incomparável!</p>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-avatar">CO</div>
+                        <div>
+                            <h4 class="client-name">Carlos Oliveira</h4>
+                            <span class="client-event">♦ Evento Corporativo</span>
+                        </div>
+                        <div class="testimonial-stars">★★★★★</div>
+                    </div>
                 </div>
                 <div class="testimonial-card fade-in-up" style="animation-delay: 0.3s;">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="feedback">"Amei cada detalhe do bolo e dos macarons para os meus 15 anos. Atendimento super atencioso da equipe."</p>
-                    <h4 class="client-name">Beatriz Costa</h4>
-                    <span class="client-event">Festa de 15 Anos</span>
+                    <div class="testimonial-quote-icon">❝</div>
+                    <p class="feedback">Amei cada detalhe do bolo e dos macarons para os meus 15 anos. O atendimento foi super atencioso do início ao fim. Sonho realizado!</p>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-avatar">BC</div>
+                        <div>
+                            <h4 class="client-name">Beatriz Costa</h4>
+                            <span class="client-event">♦ Festa de 15 Anos</span>
+                        </div>
+                        <div class="testimonial-stars">★★★★★</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -277,11 +328,19 @@
 
     <!-- Instagram Section -->
     <section class="instagram-cta fade-in-up">
+        <div class="insta-bg-pattern"></div>
         <div class="container insta-container">
+            <div class="insta-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </div>
             <div class="insta-text">
+                <p class="insta-handle">@LuhCandy</p>
                 <h2>Acompanhe os Bastidores</h2>
-                <p>Siga-nos no Instagram <strong>@LuhCandy</strong> e veja diariamente nossas novas criações, produções e encante-se com a verdadeira arte em açúcar.</p>
-                <a href="#" class="btn btn-outline insta-btn" target="_blank" rel="noopener noreferrer">Seguir no Instagram</a>
+                <p>Siga-nos e veja diariamente nossas novas criações, produções e encante-se com a verdadeira arte em açúcar.</p>
+                <a href="https://instagram.com/luhcandy" class="btn insta-btn-styled" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+                    Seguir no Instagram
+                </a>
             </div>
         </div>
     </section>
@@ -294,7 +353,11 @@
             </div>
             <p>Atendimento exclusivo via WhatsApp</p>
             <p class="whatsapp-number">(12) 99253-8126</p>
-            <p class="copyright">&copy; 2026 Luh Candy Buffet Brunch. Todos os direitos reservados.</p>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Luh Candy Buffet Brunch. Todos os direitos reservados.</p>
+                <p class="agency">Desenvolvido por <strong>2type</strong></p>
+            </div>
         </div>
     </footer>
 
