@@ -1121,12 +1121,13 @@ footer {
 
 .day-seal {
     position: absolute;
-    bottom: 2px;
-    right: 2px;
-    width: 20px;
-    height: 20px;
-    opacity: 0.9;
-    transition: transform 0.3s ease;
+    bottom: 0px;
+    right: 0px;
+    width: 26px;
+    height: 26px;
+    opacity: 1;
+    filter: drop-shadow(0px 2px 4px rgba(198, 129, 123, 0.8));
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .cal-day:hover .day-seal {
@@ -1182,8 +1183,9 @@ footer {
 }
 
 .legend-seal {
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
+    filter: drop-shadow(0px 2px 4px rgba(198, 129, 123, 0.5));
 }
 
 /* Staggered entry animation */
