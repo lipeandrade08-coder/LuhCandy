@@ -351,7 +351,8 @@ footer {
     display: block;
     line-height: 0;
     margin-bottom: -1px;
-    background-color: var(--color-cream); /* matches section above */
+    background-color: var(--color-cream);
+    /* matches section above */
 }
 
 .footer-wave svg {
@@ -405,13 +406,25 @@ footer {
 }
 
 @keyframes sealFloat {
-    0%, 100% { transform: translateY(0px); }
-    50%       { transform: translateY(-8px); }
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
 }
 
 @keyframes sealRotate {
-    from { transform: rotate(0deg); }
-    to   { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -529,7 +542,8 @@ footer {
     gap: 10px;
 }
 
-.copyright, .agency {
+.copyright,
+.agency {
     font-size: 0.82rem;
     opacity: 0.5;
     margin: 0;
@@ -557,13 +571,16 @@ footer {
         grid-template-columns: 1fr;
         gap: 35px;
     }
+
     .footer-brand {
         align-items: center;
         text-align: center;
     }
+
     .footer-social {
         justify-content: center;
     }
+
     .footer-bottom {
         flex-direction: column;
         text-align: center;
@@ -634,8 +651,13 @@ footer {
     opacity: 0.6;
 }
 
-.section-eyebrow::before { left: 0; }
-.section-eyebrow::after  { right: 0; }
+.section-eyebrow::before {
+    left: 0;
+}
+
+.section-eyebrow::after {
+    right: 0;
+}
 
 .section-header h2 {
     font-family: var(--font-primary);
@@ -666,12 +688,43 @@ footer {
     position: relative;
 }
 
-.sweets-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    padding: 10px 0;
-    align-items: end;
+.sweets-slideshow {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(63, 29, 11, 0.15);
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-cream);
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .sweet-card {
@@ -762,7 +815,7 @@ footer {
     left: -75%;
     width: 50%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
     transform: skewX(-20deg);
     transition: left 0.6s ease;
     pointer-events: none;
@@ -847,9 +900,11 @@ footer {
     0% {
         transform: translateY(0px) rotate(0deg);
     }
+
     50% {
         transform: translateY(-10px) rotate(3deg);
     }
+
     100% {
         transform: translateY(0px) rotate(0deg);
     }
@@ -859,9 +914,11 @@ footer {
     0% {
         transform: translateY(0px) scale(1);
     }
+
     50% {
         transform: translateY(-12px) scale(1.05);
     }
+
     100% {
         transform: translateY(0px) scale(1);
     }
@@ -871,9 +928,11 @@ footer {
     0% {
         transform: translateY(0px) skewX(0deg);
     }
+
     50% {
         transform: translateY(-8px) skewX(-2deg);
     }
+
     100% {
         transform: translateY(0px) skewX(0deg);
     }
@@ -1298,7 +1357,7 @@ footer {
     letter-spacing: 0.5px;
 }
 
-.testimonial-footer > div:nth-child(2) {
+.testimonial-footer>div:nth-child(2) {
     flex: 1;
 }
 
@@ -1514,11 +1573,12 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+
     /* Navbar */
     .nav-logo {
         height: 25px;
     }
-    
+
     header.scrolled .nav-logo {
         height: 22px;
     }
@@ -1536,7 +1596,7 @@ footer {
     .glass-card {
         padding: 30px 15px;
     }
-    
+
     .hero-description {
         font-size: 0.95rem;
         margin-bottom: 25px;
@@ -1546,7 +1606,7 @@ footer {
     .section-header h2 {
         font-size: 1.8rem;
     }
-    
+
     .section-header p {
         font-size: 0.95rem;
     }
@@ -1577,7 +1637,7 @@ footer {
     .event-types-text h2 {
         font-size: 1.8rem;
     }
-    
+
     .event-types-image {
         margin-top: 20px;
     }
@@ -1595,11 +1655,11 @@ footer {
         width: 14px;
         height: 14px;
     }
-    
+
     .animated-calendar {
         padding: 20px 15px;
     }
-    
+
     .calendar-header h3 {
         font-size: 1.4rem;
     }
@@ -1609,7 +1669,7 @@ footer {
         font-size: 1.05rem;
         padding: 15px;
     }
-    
+
     .faq-answer {
         padding: 0 15px 15px;
         font-size: 0.95rem;
@@ -1619,18 +1679,18 @@ footer {
     .insta-text h2 {
         font-size: 1.8rem;
     }
-    
+
     .whatsapp-number {
         font-size: 1.2rem;
     }
-    
+
     .floating-whatsapp {
         bottom: 20px;
         right: 20px;
         width: 50px;
         height: 50px;
     }
-    
+
     .floating-whatsapp svg {
         width: 30px;
         height: 30px;

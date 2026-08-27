@@ -155,4 +155,19 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Slideshow Logic
+    const slides = document.querySelectorAll('.slide');
+    if (slides.length > 0) {
+        let currentSlide = 0;
+        
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        // Change slide every 4 seconds
+        setInterval(nextSlide, 4000);
+    }
 });
