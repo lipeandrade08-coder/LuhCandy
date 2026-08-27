@@ -160,14 +160,75 @@ document.addEventListener('DOMContentLoaded', () => {
     const slides = document.querySelectorAll('.slide');
     if (slides.length > 0) {
         let currentSlide = 0;
-        
-        function nextSlide() {
+        let slideshowInterval;
+
+        const dotsContainer = document.getElementById('slideshow-dots');
+        const prevBtn = document.getElementById('slide-prev');
+        const nextBtn = document.getElementById('slide-next');
+
+        // Create dots
+        slides.forEach((_, i) => {
+            const dot = document.createElement('button');
+            dot.className = 'slideshow-dot' + (i === 0 ? ' active' : '');
+            dot.setAttribute('aria-label', `Foto ${i + 1}`);
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+        });
+
+        const dots = dotsContainer.querySelectorAll('.slideshow-dot');
+
+        function goToSlide(index) {
             slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + 1) % slides.length;
+            dots[currentSlide].classList.remove('active');
+            currentSlide = (index + slides.length) % slides.length;
             slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
         }
 
-        // Change slide every 4 seconds
-        setInterval(nextSlide, 4000);
+        function nextSlide() { goToSlide(currentSlide + 1); }
+        function prevSlide() { goToSlide(currentSlide - 1); }
+
+        function startInterval() {
+            slideshowInterval = setInterval(nextSlide, 4000);
+        }
+
+        function resetInterval() {
+            clearInterval(slideshowInterval);
+            startInterval();
+        }
+
+        nextBtn.addEventListener('click', () => { nextSlide(); resetInterval(); });
+        prevBtn.addEventListener('click', () => { prevSlide(); resetInterval(); });
+
+        startInterval();
+    }
+
+    // Modal Cardápio Logic
+    const menuModal = document.getElementById('menu-modal');
+    const openModalBtn = document.getElementById('open-menu-modal');
+    const closeModalBtn = document.getElementById('close-menu-modal');
+
+    if (menuModal && openModalBtn && closeModalBtn) {
+        openModalBtn.addEventListener('click', () => {
+            menuModal.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        });
+
+        function closeModal() {
+            menuModal.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        closeModalBtn.addEventListener('click', closeModal);
+
+        // Close when clicking outside the modal box
+        menuModal.addEventListener('click', (e) => {
+            if (e.target === menuModal) closeModal();
+        });
+
+        // Close with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
     }
 });
