@@ -41,7 +41,7 @@ a {
 
 /* Navbar */
 header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -65,7 +65,7 @@ header.scrolled {
 }
 
 .nav-logo {
-    height: 35px;
+    height: 55px;
     width: auto;
     transition: all 0.3s ease;
 }
