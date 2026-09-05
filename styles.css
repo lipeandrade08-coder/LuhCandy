@@ -146,6 +146,13 @@ header.scrolled .btn-outline:hover {
     contain: layout style;
 }
 
+.hero-video-logo {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
 .hero-overlay {
     position: absolute;
     top: 0;
