@@ -1,0 +1,21 @@
+# Luh Candy | Buffet Brunch - Confeitaria Artesanal
+# https://luhcandy.com.br
+
+User-agent: *
+Allow: /
+
+# Bloquear acesso a arquivos desnecessários para indexação
+Disallow: /images/*.heic
+
+# Sitemap
+Sitemap: https://luhcandy.com.br/sitemap.xml
+
+# Crawl-delay para bots menos importantes
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
