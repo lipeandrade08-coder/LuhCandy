@@ -1652,6 +1652,19 @@ footer {
         margin-bottom: 25px;
     }
 
+    /* Hero Buttons — empilhados no mobile */
+    .hero-btns {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero-btns .btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+
     /* Typography & Headers */
     .section-header h2 {
         font-size: 1.8rem;
@@ -1661,10 +1674,28 @@ footer {
         font-size: 0.95rem;
     }
 
-    /* Grids (force single column on mobile to prevent overflow) */
+    /* Details grid — 1 coluna */
+    .details-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Gallery — 2 colunas no mobile */
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .gallery-item {
+        border-radius: 12px;
+    }
+
+    .gallery-overlay span {
+        font-size: 0.75rem;
+    }
+
+    /* Grids de depoimentos e doces — 1 coluna */
     .sweets-grid,
-    .details-grid,
-    .gallery-grid,
     .testimonials-grid {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -1676,6 +1707,22 @@ footer {
 
     .sweet-card {
         padding: 20px;
+    }
+
+    /* Slideshow — bordas e altura ajustadas */
+    .sweets-slideshow {
+        border-radius: 16px;
+    }
+
+    .slideshow-container img {
+        max-height: 260px;
+        object-fit: cover;
+    }
+
+    .slideshow-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 1.4rem;
     }
 
     /* Event Types */
@@ -1692,13 +1739,30 @@ footer {
         margin-top: 20px;
     }
 
+    .event-side-img {
+        width: 100%;
+        height: auto;
+        max-height: 260px;
+        object-fit: cover;
+    }
+
+    /* Event list */
+    .event-list li {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+
     /* Calendar */
     .calendar-days-of-week span {
-        font-size: 0.8rem;
+        font-size: 0.72rem;
     }
 
     .cal-day {
-        font-size: 0.9rem;
+        font-size: 0.82rem;
+        min-height: 38px;
+        padding: 4px 2px;
     }
 
     .day-seal {
@@ -1707,11 +1771,26 @@ footer {
     }
 
     .animated-calendar {
-        padding: 20px 15px;
+        padding: 20px 12px;
     }
 
     .calendar-header h3 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+    }
+
+    .cal-nav {
+        font-size: 1.2rem;
+        padding: 4px 10px;
+    }
+
+    .event-details-panel {
+        padding: 16px;
+        font-size: 0.9rem;
+    }
+
+    /* Testimonials */
+    .testimonial-card {
+        padding: 24px 20px;
     }
 
     /* FAQ */
@@ -1725,15 +1804,26 @@ footer {
         font-size: 0.95rem;
     }
 
-    /* Instagram & Footer */
+    /* Instagram section */
+    .insta-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
     .insta-text h2 {
         font-size: 1.8rem;
+    }
+
+    .insta-text p {
+        font-size: 0.9rem;
     }
 
     .whatsapp-number {
         font-size: 1.2rem;
     }
 
+    /* Floating WhatsApp */
     .floating-whatsapp {
         bottom: 20px;
         right: 20px;
@@ -1746,6 +1836,71 @@ footer {
         height: 30px;
     }
 }
+
+/* ========================================
+   Extra Small (telas até 480px — iPhones menores)
+   ======================================== */
+@media (max-width: 480px) {
+
+    /* Gallery — 1 coluna em telas muito pequenas */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-logo {
+        max-width: 170px;
+    }
+
+    .glass-card {
+        padding: 24px 12px;
+    }
+
+    h2 {
+        font-size: 1.6rem !important;
+    }
+
+    .cal-day {
+        font-size: 0.72rem;
+        min-height: 32px;
+    }
+
+    .calendar-days-of-week span {
+        font-size: 0.62rem;
+    }
+
+    .animated-calendar {
+        padding: 16px 8px;
+    }
+
+    .testimonial-card {
+        padding: 20px 16px;
+    }
+
+    .event-types-content {
+        padding: 18px;
+    }
+
+    .detail-item {
+        padding: 20px 16px;
+    }
+
+    .modal-box {
+        border-radius: 16px;
+    }
+
+    .modal-header {
+        padding: 28px 20px 16px;
+    }
+
+    .modal-body {
+        padding: 16px 20px;
+    }
+
+    .modal-footer {
+        padding: 16px 20px 28px;
+    }
+}
+
 
 /* ========================================
    Hero Buttons Layout
