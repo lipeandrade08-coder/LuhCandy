@@ -1,16 +1,87 @@
-# Luh Candy | Buffet Brunch - Confeitaria Artesanal
+# ==============================================================
+# Luh Candy | Buffet Brunch & Confeitaria Artesanal
 # https://luhcandy.com.br
+# Vale do Paraíba, SP — São José dos Campos
+# ==============================================================
 
+# ---------------------------------------------------------------
+# PERMITIR TODOS OS ROBÔS PRINCIPAIS DO GOOGLE
+# ---------------------------------------------------------------
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /images/webp/
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+# ---------------------------------------------------------------
+# PERMITIR BOTS DE REDES SOCIAIS (rich previews)
+# ---------------------------------------------------------------
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 5
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 3
+
+User-agent: applebot
+Allow: /
+
+# ---------------------------------------------------------------
+# REGRA GERAL — Permitir tudo por padrão
+# ---------------------------------------------------------------
 User-agent: *
 Allow: /
 
-# Bloquear acesso a arquivos desnecessários para indexação
-Disallow: /images/*.heic
+# Bloquear arquivos internos e desnecessários para indexação
+Disallow: /node_modules/
+Disallow: /convert-images.js
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /*.heic$
+Disallow: /*.jpg.jpeg$
+Disallow: /images/*.jpg.jpeg
 
-# Sitemap
-Sitemap: https://luhcandy.com.br/sitemap.xml
-
-# Crawl-delay para bots menos importantes
+# ---------------------------------------------------------------
+# CONTROLE DE BOTS DE SCRAPING E SPAM
+# Mantém o rastreamento pesado longe para não sobrecarregar
+# ---------------------------------------------------------------
 User-agent: SemrushBot
 Crawl-delay: 10
 
@@ -19,3 +90,36 @@ Crawl-delay: 10
 
 User-agent: MJ12bot
 Crawl-delay: 10
+
+User-agent: DotBot
+Crawl-delay: 10
+
+User-agent: BLEXBot
+Crawl-delay: 10
+
+User-agent: PetalBot
+Crawl-delay: 10
+
+User-agent: DataForSeoBot
+Crawl-delay: 30
+
+User-agent: SeznamBot
+Crawl-delay: 10
+
+# Bloquear scrapers abusivos conhecidos
+User-agent: MauiBot
+Disallow: /
+
+User-agent: 80legs
+Disallow: /
+
+User-agent: masscan
+Disallow: /
+
+User-agent: Xenu
+Disallow: /
+
+# ---------------------------------------------------------------
+# SITEMAPS
+# ---------------------------------------------------------------
+Sitemap: https://luhcandy.com.br/sitemap.xml

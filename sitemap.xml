@@ -1,14 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 
-  <!-- Página Principal -->
+  <!-- ============================================================
+       PÁGINA PRINCIPAL — Alta prioridade, indexação frequente
+       ============================================================ -->
   <url>
     <loc>https://luhcandy.com.br/</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luhcandy.com.br/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luhcandy.com.br/"/>
+
+    <!-- Imagens indexáveis pelo Google Images -->
+    <image:image>
+      <image:loc>https://luhcandy.com.br/images/webp/hero_bg_new.webp</image:loc>
+      <image:title>Luh Candy Buffet Brunch - Confeitaria Artesanal Vale do Paraíba</image:title>
+      <image:caption>Buffet Brunch sofisticado e confeitaria artesanal no Vale do Paraíba, SP</image:caption>
+      <image:geo_location>São José dos Campos, SP, Brasil</image:geo_location>
+      <image:license>https://luhcandy.com.br/</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://luhcandy.com.br/images/webp/logohero.png</image:loc>
+      <image:title>Luh Candy - Logo Oficial</image:title>
+      <image:caption>Logo oficial da Luh Candy Buffet Brunch</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://luhcandy.com.br/images/webp/IMG_0573.webp</image:loc>
+      <image:title>Doces Finos Artesanais - Luh Candy</image:title>
+      <image:caption>Seleção de doces finos e brigadeiros gourmet da Luh Candy</image:caption>
+      <image:geo_location>São José dos Campos, SP, Brasil</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://luhcandy.com.br/images/webp/IMG_1242.webp</image:loc>
+      <image:title>Mesa de Doces para Casamento - Luh Candy</image:title>
+      <image:caption>Mesa de doces finos artesanais para casamentos no Vale do Paraíba</image:caption>
+      <image:geo_location>São José dos Campos, SP, Brasil</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://luhcandy.com.br/images/webp/IMG_1197.webp</image:loc>
+      <image:title>Brunch Corporativo - Luh Candy</image:title>
+      <image:caption>Brunch corporativo sofisticado e premium para eventos empresariais</image:caption>
+      <image:geo_location>São José dos Campos, SP, Brasil</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://luhcandy.com.br/images/webp/IMG_1240.webp</image:loc>
+      <image:title>Bolo de Aniversário Artesanal - Luh Candy</image:title>
+      <image:caption>Bolos personalizados e artesanais para aniversários e celebrações especiais</image:caption>
+      <image:geo_location>São José dos Campos, SP, Brasil</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://luhcandy.com.br/images/webp/IMG_0336.webp</image:loc>
+      <image:title>Celebrações Íntimas - Luh Candy</image:title>
+      <image:caption>Chá de panela, chá revelação e celebrações íntimas com confeitaria artesanal</image:caption>
+      <image:geo_location>São José dos Campos, SP, Brasil</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://luhcandy.com.br/images/webp/IMG_0301.webp</image:loc>
+      <image:title>Mesa de Frios e Brunch - Luh Candy</image:title>
+      <image:caption>Mesa de frios artesanal e brunch para eventos e confraternizações</image:caption>
+      <image:geo_location>São José dos Campos, SP, Brasil</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://luhcandy.com.br/images/webp/IMG_9205.webp</image:loc>
+      <image:title>Momentos Especiais - Confeitaria Luh Candy</image:title>
+      <image:caption>Momentos especiais e únicos criados pela Luh Candy em eventos no Vale do Paraíba</image:caption>
+      <image:geo_location>São José dos Campos, SP, Brasil</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://luhcandy.com.br/images/webp/simulacao_ambiente.webp</image:loc>
+      <image:title>Ambiente de Evento - Luh Candy</image:title>
+      <image:caption>Simulação de ambiente de evento com mesa de doces e brunch da Luh Candy</image:caption>
+      <image:geo_location>São José dos Campos, SP, Brasil</image:geo_location>
+    </image:image>
+    <!-- Fotos de eventos recentes -->
+    <image:image>
+      <image:loc>https://luhcandy.com.br/images/webp/20260910_115453.webp</image:loc>
+      <image:title>Evento Recente - Setembro 2026 - Luh Candy</image:title>
+      <image:caption>Fotos do evento mais recente produzido pela Luh Candy em Setembro de 2026</image:caption>
+      <image:geo_location>São José dos Campos, SP, Brasil</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://luhcandy.com.br/images/webp/20260910_103043.webp</image:loc>
+      <image:title>Café Corporativo BNI - Luh Candy</image:title>
+      <image:caption>Detalhes do café corporativo BNI preparado pela Luh Candy</image:caption>
+      <image:geo_location>São José dos Campos, SP, Brasil</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://luhcandy.com.br/images/webp/20260911_200615.webp</image:loc>
+      <image:title>Produção Artesanal - Luh Candy Setembro 2026</image:title>
+      <image:caption>Produção artesanal de doces e bolos da Luh Candy</image:caption>
+      <image:geo_location>São José dos Campos, SP, Brasil</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://luhcandy.com.br/images/webp/20260815_170504.webp</image:loc>
+      <image:title>Eventos Agosto 2026 - Luh Candy</image:title>
+      <image:caption>Registro fotográfico de evento realizado em Agosto de 2026 pela Luh Candy</image:caption>
+      <image:geo_location>São José dos Campos, SP, Brasil</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- ============================================================
+       SEÇÃO: Nossas Delícias (Confeitaria Artesanal)
+       ============================================================ -->
+  <url>
+    <loc>https://luhcandy.com.br/#nossas-delicias</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ============================================================
+       SEÇÃO: Celebramos com Você (Tipos de Evento)
+       ============================================================ -->
+  <url>
+    <loc>https://luhcandy.com.br/#celebramos</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ============================================================
+       SEÇÃO: Galeria de Momentos Inesquecíveis
+       ============================================================ -->
+  <url>
+    <loc>https://luhcandy.com.br/#galeria</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://luhcandy.com.br/images/webp/IMG_0573.webp</image:loc>
+      <image:title>Galeria de Doces Finos - Luh Candy</image:title>
+      <image:caption>Galeria de fotos dos eventos e produções da confeitaria Luh Candy</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ============================================================
+       SEÇÃO: Nossa Agenda de Eventos
+       ============================================================ -->
+  <url>
+    <loc>https://luhcandy.com.br/#agenda</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ============================================================
+       SEÇÃO: Depoimentos de Clientes
+       ============================================================ -->
+  <url>
+    <loc>https://luhcandy.com.br/#depoimentos</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ============================================================
+       SEÇÃO: Dúvidas Frequentes (FAQ)
+       ============================================================ -->
+  <url>
+    <loc>https://luhcandy.com.br/#faq</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ============================================================
+       CARDÁPIO PDF — Indexável pelo Google
+       ============================================================ -->
+  <url>
+    <loc>https://luhcandy.com.br/images/LuhCandy2025_cardapio2026.pdf</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
 </urlset>
