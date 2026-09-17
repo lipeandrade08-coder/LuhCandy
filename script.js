@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // =========================================================
     const calendarGrid = document.getElementById('calendar-grid');
     if (calendarGrid) {
-        let currentMonth = 7; // Agosto (0-indexed)
+        let currentMonth = 8; // Setembro (0-indexed)
         const currentYear = 2026;
 
         const monthNames = [
@@ -172,6 +172,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 22: { title: 'Evento Corporativo Exclusivo', desc: 'Atendimento fechado para confraternização empresarial. (Data Indisponível)', link: null },
                 25: { title: 'Bodas de Prata', desc: 'Comemoração de 25 anos de casados com menu super premium. (Data Indisponível)', link: null },
                 30: { title: 'Agenda de Setembro Aberta', desc: 'Datas disponíveis para o próximo mês. Consulte-nos para reservar o seu evento.', link: 'https://wa.me/5512992538126?text=Olá,%20gostaria%20de%20verificar%20uma%20data%20em%20Setembro!' }
+            },
+            8: { // Setembro
+                1:  { title: 'Café Corporativo BNI', desc: 'Evento matinal de negócios e network. (Data Indisponível)', link: null },
+                7:  { title: 'Produção', desc: 'Dia focado na produção interna.', link: null },
+                8:  { title: 'Café Corporativo BNI', desc: 'Evento matinal de negócios e network. (Data Indisponível)', link: null },
+                9:  { title: 'Café Corporativo e Doces', desc: 'Mesa completa de café corporativo com nossa seleção de doces. (Data Indisponível)', link: null },
+                10: { title: 'Bolo Aniversariantes da Empresa', desc: 'Bolo especial para comemoração corporativa. (Data Indisponível)', link: null },
+                11: { title: 'Eventos do Dia', desc: 'Bolo de aniversário e Café da manhã corporativo. (Data Indisponível)', link: null },
+                14: { title: 'Produção', desc: 'Dia focado na produção interna.', link: null },
+                15: { title: 'Café Corporativo BNI', desc: 'Evento matinal de negócios e network. (Data Indisponível)', link: null },
+                21: { title: 'Produção', desc: 'Dia focado na produção interna.', link: null },
+                22: { title: 'Eventos do Dia', desc: 'Manhã: Café Corporativo BNI. Noite: Doces Apae. (Data Indisponível)', link: null },
+                23: { title: 'Bolo Aniversário de Casamento', desc: 'Bolo especial para celebração. (Data Indisponível)', link: null },
+                26: { title: 'Café & Tarde de Autógrafos', desc: 'Evento especial com mesa de café. (Data Indisponível)', link: null },
+                28: { title: 'Produção', desc: 'Dia focado na produção interna.', link: null },
+                29: { title: 'Café Corporativo BNI', desc: 'Evento matinal de negócios e network. (Data Indisponível)', link: null }
             }
         };
 
